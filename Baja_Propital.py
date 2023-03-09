@@ -27,6 +27,7 @@ for i in range(1,propiedades):
         pagina+=1
         time.sleep(1)
     boton=driver.find_elements(By.XPATH, "//*[@class='btn btn-xs default blue-stripe lnkEdit']")
+    print(f'{lugar_prop} es el indice y hay {len(boton)}')
     boton[lugar_prop].click()
     time.sleep(2)
     boton=driver.find_elements(By.XPATH, "//*[@class='itemMenuMax']")
